@@ -2,6 +2,8 @@
 from PIL import Image
 import random
 
+st.set_page_config(page_title="Doctor AI", layout="wide", initial_sidebar_state="collapsed")
+
 # Placeholder for API keys and sensitive data
 API_KEY = 'your_api_key_here'  # Replace with your actual API key
 

@@ -143,8 +143,7 @@ load_css('assets/styles.css')  # Ensure you have a 'styles.css' file in the 'ass
 st.markdown("""
     <nav class="navbar">
     <h3>
-    
-        <a class="nav-link" href="#home">Home| </a>
+    	<a class="nav-link" href="#home">Home| </a>
         <a class="nav-link" href="#about">About | Us</a>
         <a class="nav-link" href="#services">Services |</a>
         <a class="nav-link" href="#contact">Contact |</a>

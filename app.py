@@ -143,7 +143,7 @@ load_css('assets/styles.css')  # Ensure you have a 'styles.css' file in the 'ass
 st.markdown("""
     <nav class="navbar">
     <h3>
-    <p>
+    
         <a class="nav-link" href="#home">Home| </a>
         <a class="nav-link" href="#about">About | Us</a>
         <a class="nav-link" href="#services">Services |</a>
@@ -154,7 +154,7 @@ st.markdown("""
         <a class="nav-link" href="#chatbot">Chatbot |</a>
         <a class="nav-link" href="#new-doctors">New Doctor Profiles |</a>
         <a class="nav-link" href="#admin-management">Admin Management |</a>
-    </nav></p></h3>
+    </nav></h3>
 """, unsafe_allow_html=True)
 
 # Hero Section

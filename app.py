@@ -29,7 +29,7 @@ st.markdown("""
     
     .hero {
         height: 500px;
-        background-image: url('https://via.placeholder.com/1920x500');
+        background-image: url('doctor_ai.png');
         background-size: cover;
         background-position: center;
         position: relative;

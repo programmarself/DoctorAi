@@ -201,8 +201,8 @@ st.markdown("<div id='contact'></div>", unsafe_allow_html=True)
 st.header("Contact Us")
 st.write("Get in touch with us through email, phone, or visit our office.")
 st.write("Email: contact@healthcare.com")
-st.write("Phone: +1 234 567 890")
-st.write("Address: 123 Health St, Wellness City")
+st.write("Phone: +92 234 567 890")
+st.write("Address: 123 Health St, Peshawar,Pakistan")
 
 st.markdown("<div id='blog'></div>", unsafe_allow_html=True)
 st.header("Health Blog")
@@ -216,7 +216,7 @@ if search_term:
     st.write(f"Searching for doctors with the term: {search_term}")
 
 st.subheader("Book an Appointment")
-doctor_name = st.selectbox("Select Doctor", ["Dr. Smith", "Dr. Johnson", "Dr. Lee"])  
+doctor_name = st.selectbox("Select Doctor", ["Dr. Irfan Ullah Khan", "Dr. Fayaz Khan", "Dr. Tasbih"])  
 appointment_date = st.date_input("Select Date")
 appointment_time = st.time_input("Select Time")
 if st.button("Book Appointment"):

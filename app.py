@@ -145,8 +145,8 @@ st.markdown("""
     <h3>
     <p>
         <a class="nav-link" href="#home">Home| </a>
-         <a class="nav-link" href="#about">About | Us</a>
-        	<a class="nav-link" href="#services">Services |</a>
+        <a class="nav-link" href="#about">About | Us</a>
+        <a class="nav-link" href="#services">Services |</a>
         <a class="nav-link" href="#contact">Contact |</a>
         <a class="nav-link" href="#blog">Health Blog |</a>
         <a class="nav-link" href="#client">Client Interface |</a>
@@ -154,7 +154,7 @@ st.markdown("""
         <a class="nav-link" href="#chatbot">Chatbot |</a>
         <a class="nav-link" href="#new-doctors">New Doctor Profiles |</a>
         <a class="nav-link" href="#admin-management">Admin Management |</a>
-    </p></nav></h3>
+    </nav></p></h3>
 """, unsafe_allow_html=True)
 
 # Hero Section

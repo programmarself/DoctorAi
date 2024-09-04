@@ -142,7 +142,7 @@ load_css('assets/styles.css')  # Ensure you have a 'styles.css' file in the 'ass
 # Custom Navbar
 st.markdown("""
     <nav class="navbar">
-    <nav style="font-weight: bold;">
+    <nav style="font-weight: bold;","font-size: 20px;">
     <nav style="font-size: 20px;">
 
         <a class="nav-link" href="#home">Home| </a>

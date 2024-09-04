@@ -154,7 +154,7 @@ st.markdown("""
         <a class="nav-link" href="#chatbot">Chatbot |</a>
         <a class="nav-link" href="#new-doctors">New Doctor Profiles |</a>
         <a class="nav-link" href="#admin-management">Admin Management |</a>
-    </nav></h3></p>
+    </p></nav></h3>
 """, unsafe_allow_html=True)
 
 # Hero Section

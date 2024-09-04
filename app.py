@@ -4,6 +4,121 @@ import random
 
 st.set_page_config(page_title="Doctor AI", layout="wide", initial_sidebar_state="collapsed")
 
+# Custom CSS for enhanced styling
+st.markdown("""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
+    }
+    
+    .stButton>button {
+        background-color: #3498db;
+        color: white;
+        padding: 15px 25px;
+        font-size: 16px;
+        border-radius: 50px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .stButton>button:hover {
+        background-color: #2980b9;
+    }
+    
+    .hero {
+        height: 500px;
+        background-image: url('doctor_ai.png');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 15px;
+    }
+
+    .hero-content {
+        position: relative;
+        color: white;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .hero-content h1 {
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .hero-content p {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .hero-content .cta-btn {
+        background-color: #e74c3c;
+        color: white;
+        padding: 15px 30px;
+        font-size: 18px;
+        border-radius: 50px;
+        text-decoration: none;
+    }
+
+    .hero-content .cta-btn:hover {
+        background-color: #c0392b;
+    }
+
+    .glass-card {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    
+    .stSelectbox>div>div {
+        background-color: white;
+        border-radius: 50px;
+        padding: 10px;
+    }
+
+    .stTextInput>div>div>input {
+        border-radius: 50px;
+        padding: 10px;
+    }
+
+    footer {
+        background-color: #34495e;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+    }
+
+    footer a {
+        color: #1abc9c;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    </style>
+    """, unsafe_allow_html=True)
+
 # Placeholder for API keys and sensitive data
 API_KEY = 'your_api_key_here'  # Replace with your actual API key
 

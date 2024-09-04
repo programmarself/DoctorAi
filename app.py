@@ -143,7 +143,6 @@ st.markdown("""
     <footer>
     <p>Developed By: Irfan Ullah Khan</p>
     <a href='https://flowcv.me/ikm'>https://flowcv.me/ikm</a>
-    <p>Developed For: Essential Generative AI Training</p>
-    <p>Conducted By: PAK ANGELS, iCodeGuru, ASPIRE PAKISTAN</p>
+  
     </footer>
 """, unsafe_allow_html=True)

@@ -1,6 +1,7 @@
 ﻿import streamlit as st
 import pandas as pd
 import numpy as np
+import re
 
 # Load custom CSS
 def load_css(file_path):
@@ -8,14 +9,29 @@ def load_css(file_path):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Placeholder for API keys and sensitive data
-API_KEY = 'your_api_key_here'  # Replace with your actual API key
+# API_KEY = 'your_api_key_here'  # Replace with your actual API key
 
-# Function to simulate a chatbot response
+# Function to simulate a chatbot response with improved logic
 def chatbot_response(query):
-    if 'symptom' in query.lower():
-        return "Based on your symptoms, you may need to consult a doctor for a precise diagnosis."
-    elif 'medication' in query.lower():
-        return "Please consult a healthcare professional for personalized medication recommendations."
+    query = query.lower()
+    
+    # Simple symptom check
+    if re.search(r'\b(symptom|fever|cough|pain|headache)\b', query):
+        return "It sounds like you're experiencing symptoms. Please consult a doctor for a more accurate diagnosis."
+    
+    # Medication related queries
+    elif re.search(r'\b(medication|medicine|pill|drug|prescription)\b', query):
+        return "For medication advice, it's best to consult a healthcare professional. They can provide personalized recommendations based on your health condition."
+    
+    # General health advice
+    elif re.search(r'\b(diet|exercise|nutrition|health)\b', query):
+        return "Maintaining a balanced diet and regular exercise is crucial for good health. If you need specific advice, consult a nutritionist or health professional."
+    
+    # Doctor consultation
+    elif re.search(r'\b(doctor|appointment|consult)\b', query):
+        return "To book an appointment with a doctor, please use our 'Book Appointment' feature in the Client Interface."
+    
+    # Default fallback
     else:
         return "I'm not sure how to help with that. Please contact a doctor for more information."
 
@@ -92,7 +108,9 @@ elif page == "Admin Panel":
 # Chatbot Page
 elif page == "Chatbot":
     st.subheader("Chatbot for Medication Suggestions")
-    user_query = st.text_input("Ask the chatbot:")
+    st.write("Ask me anything about your symptoms, medications, or general health advice!")
+
+    user_query = st.text_input("Type your query here:")
     if user_query:
         response = chatbot_response(user_query)
         st.write(f"Chatbot: {response}")

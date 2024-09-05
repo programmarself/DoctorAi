@@ -126,7 +126,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # Placeholder for API keys and sensitive data
-API_KEY = 'your_api_key_here'  # Replace with your actual API key
+api_key = os.environ.get("API_KEY") # Replace with your actual API key
 
 # Function to simulate a chatbot response
 def chatbot_response(query):

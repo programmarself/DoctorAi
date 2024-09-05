@@ -1,4 +1,4 @@
-import streamlit as st
+﻿import streamlit as st
 from PIL import Image
 import random
 
@@ -295,7 +295,7 @@ st.markdown("""
     <footer>
         <p>Developed By: Irfan Ullah Khan</p>
         <p><a href="https://flowcv.me/ikm">https://flowcv.me/ikm</a></p>
-        <p>Developed For: Essential Generative AI Training</p>
-        <p>Conducted By: PAK ANGELS, iCodeGuru, ASPIRE PAKISTAN</p>
+        <p>Linkedin: https://www.linkedin.com/in/irfanullahkhanmarwat/</p>
+        
     </footer>
 """, unsafe_allow_html=True)

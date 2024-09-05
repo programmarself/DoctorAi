@@ -33,16 +33,14 @@ st.markdown("""
         background-color: #2980b9;
     }
     
-    /* Hero section styling */
     .hero {
-        position: relative;
-        height: 400px;
-        background-image: url('assets/doctor ai.png'); /* Updated to your image path */
+        height: 680px;
+        background-image: url('assets/doctor ai.png');
         background-size: cover;
         background-position: center;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        text-align: center;
+        position: relative;
+        border-radius: 15px;
+        margin-bottom: 30px;
     }
 
     .hero-overlay {
@@ -127,6 +125,19 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
+st.markdown("""
+    <style>
+    body {
+        background-image: url('assets/doctor ai.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
 # Placeholder for API keys and sensitive data
 api_key = st.secrets["api_key"]
 
@@ -177,31 +188,18 @@ st.markdown("""
         </div>
     </section>
 """, unsafe_allow_html=True)
-
 # Sections
 st.markdown("<div id='home'></div>", unsafe_allow_html=True)
 st.header("Welcome to HealthCare Center")
-st.write("""At Doctor AI, we leverage state-of-the-art technology to revolutionize healthcare services, offering solutions that are specifically tailored to your unique needs. Our platform integrates cutting-edge AI tools with the expertise of seasoned medical professionals to deliver a comprehensive and personalized health experience.
-
-Our mission is to enhance the quality and accessibility of healthcare by providing intelligent, data-driven insights and solutions. Whether you're seeking general consultations, specialist care, or emergency services, our technology ensures that you receive accurate and timely support.
-
-Our team of healthcare experts is dedicated to guiding you through every step of your health journey. From virtual consultations to real-time health monitoring, we are here to ensure that you have access to the best possible care, no matter where you are.
-
-By combining innovative AI capabilities with compassionate medical guidance, Doctor AI is committed to making healthcare more efficient, accessible, and personalized. Trust us to be your partner in achieving better health and wellness.""")
+st.write("At Doctor AI, we leverage cutting-edge technology to deliver exceptional healthcare services tailored to your needs. Our team of experts is here to support your health journey.")
 
 st.markdown("<div id='about'></div>", unsafe_allow_html=True)
 st.header("About Us")
-st.write("""Doctor AI stands at the cutting edge of digital health innovation, merging advanced artificial intelligence technology with the expertise of highly skilled medical professionals to offer unparalleled healthcare services. We are dedicated to transforming the healthcare experience by harnessing the power of AI to provide exceptional care that is both efficient and personalized.
-
-Our core mission is to revolutionize healthcare accessibility and quality by integrating sophisticated AI solutions with the compassionate touch of experienced clinicians. We believe that every individual deserves healthcare that is tailored to their unique needs and preferences. By leveraging AI, we aim to streamline processes, enhance diagnostic accuracy, and deliver insights that empower patients to make informed decisions about their health.
-
-Doctor AI is committed to breaking down barriers to healthcare, making it more accessible and effective for everyone. Our platform offers a seamless blend of technology and human touch, ensuring that every patient receives timely, relevant, and personalized care. Whether you're seeking routine check-ups, specialist consultations, or emergency services, our advanced AI tools and dedicated medical professionals work together to provide a holistic and efficient healthcare experience.
-
-At Doctor AI, we are passionate about using innovation to improve health outcomes and make quality care more attainable for all. Join us on our journey to redefine healthcare with the perfect balance of technology and human expertise.""")
+st.write("Doctor AI is at the forefront of digital health, combining AI technology with experienced medical professionals to deliver quality care. Our mission is to make healthcare more accessible, personalized, and efficient for everyone.")
 
 st.markdown("<div id='services'></div>", unsafe_allow_html=True)
 st.header("Our Services")
-st.write("""We offer a comprehensive range of medical services to meet the diverse needs of our patients:""")
+st.write("We offer a comprehensive range of medical services to meet the diverse needs of our patients:")
 st.markdown("""
     <div class="card-container">
         <div class="card">
@@ -210,60 +208,94 @@ st.markdown("""
         </div>
         <div class="card">
             <h3>Specialist Care</h3>
-            <p>Access to specialized medical care from top specialists in various fields, ensuring you get the expertise you need for specific health issues.</p>
+            <p>Access to a network of specialists across various fields, ensuring you receive the precise care you need.</p>
         </div>
         <div class="card">
             <h3>Emergency Services</h3>
-            <p>Quick and efficient emergency care, available 24/7 to handle urgent medical situations with the utmost urgency and expertise.</p>
+            <p>We provide round-the-clock emergency services, ensuring immediate care when you need it most.</p>
         </div>
         <div class="card">
-            <h3>Virtual Consultations</h3>
-            <p>Connect with healthcare professionals from the comfort of your home through our secure and convenient virtual consultation platform.</p>
+            <h3>Telemedicine</h3>
+            <p>Consult with our doctors from the comfort of your home through our secure telemedicine platform.</p>
+        </div>
+        <div class="card">
+            <h3>Health Monitoring</h3>
+            <p>Our AI-driven tools help you monitor your health in real-time, providing insights and recommendations.</p>
         </div>
     </div>
 """, unsafe_allow_html=True)
 
 st.markdown("<div id='contact'></div>", unsafe_allow_html=True)
 st.header("Contact Us")
-st.write("""For inquiries, support, or further information, feel free to reach out to us through the following channels:""")
-st.markdown("""
-    <div class="contact-info">
-        <p><strong>Email:</strong> support@doctorai.com</p>
-        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-        <p><strong>Address:</strong> 123 Health St, Suite 100, Wellness City, HC 12345</p>
-    </div>
-""", unsafe_allow_html=True)
+st.write("We're here to help. Reach out to us via email, phone, or visit us at our clinic.")
+st.write("**Email:** contact@doctorai.com")
+st.write("**Phone:** +92 234 567 890")
+st.write("**Address:** 123 Health St, Peshawar, Pakistan")
 
 st.markdown("<div id='blog'></div>", unsafe_allow_html=True)
 st.header("Health Blog")
-st.write("""Stay updated with the latest in health and wellness through our blog, featuring expert articles, tips, and news on various health topics.""")
+st.write("Stay updated with the latest health news, tips, and expert advice on our blog. We cover a range of topics to help you stay informed and healthy.")
 
 st.markdown("<div id='client'></div>", unsafe_allow_html=True)
 st.header("Client Interface")
-st.write("""Our client interface allows you to manage your health records, schedule appointments, and access personalized health insights and recommendations.""")
+st.subheader("Search for Doctors")
+search_term = st.text_input("Search for doctors based on specialty, location, or availability")
+if search_term:
+    st.write(f"Searching for doctors specializing in '{search_term}'...")
+
+st.subheader("Book an Appointment")
+selected_doctor = st.selectbox("Choose a doctor", ["Dr. Ali - Cardiologist", "Dr. Ahmed - Dermatologist", "Dr. Sara - Pediatrician"])
+appointment_date = st.date_input("Select Appointment Date")
+appointment_time = st.time_input("Select Appointment Time")
+st.button("Book Appointment")
+
+st.subheader("Access Medical History")
+st.text_input("Enter your Patient ID to view your medical history")
 
 st.markdown("<div id='admin'></div>", unsafe_allow_html=True)
 st.header("Admin Panel")
-st.write("""The admin panel provides tools for managing doctor profiles, overseeing client interactions, and monitoring platform performance.""")
+st.write("This section is for administrators to manage doctors, appointments, and billing.")
+admin_action = st.selectbox("Admin Actions", ["Add New Doctor", "Monitor Appointments", "Manage Billing"])
+if admin_action == "Add New Doctor":
+    st.text_input("Enter Doctor's Name")
+    st.text_input("Enter Specialty")
+    st.text_input("Enter Contact Information")
+    st.button("Add Doctor")
 
 st.markdown("<div id='chatbot'></div>", unsafe_allow_html=True)
 st.header("Chatbot")
-st.write("""Our AI-powered chatbot is available to provide quick responses to your health-related queries and guide you through common medical concerns.""")
+user_query = st.text_input("Ask the Doctor AI about your symptoms")
+if user_query:
+    st.write(chatbot_response(user_query))
 
 st.markdown("<div id='new-doctors'></div>", unsafe_allow_html=True)
 st.header("New Doctor Profiles")
-st.write("""New doctors can create their profiles and get listed on our platform, allowing them to connect with patients and showcase their expertise.""")
+st.write("Are you a new doctor? Submit your profile here.")
+st.text_input("Full Name")
+st.text_input("Specialty")
+st.text_input("Contact Information")
+st.button("Submit Profile")
 
 st.markdown("<div id='admin-management'></div>", unsafe_allow_html=True)
 st.header("Admin Management")
-st.write("""Our admin management tools allow for efficient administration of doctor profiles, client interactions, and overall platform functionality.""")
+st.write("Manage all doctors, appointments, and patient records from this section.")
+
+# Sidebar - Random Health Tip
+health_tips = [
+    "Stay hydrated by drinking at least 8 glasses of water a day.",
+    "Regular exercise boosts your immune system.",
+    "Eat a balanced diet rich in fruits and vegetables.",
+    "Get at least 7-8 hours of sleep every night.",
+    "Regular check-ups help detect health issues early."
+]
+st.sidebar.markdown(f"**Health Tip of the Day:** {random.choice(health_tips)}")
 
 # Footer
 st.markdown("""
     <footer>
         <p>Developed By: Irfan Ullah Khan</p>
         <p><a href="https://flowcv.me/ikm">https://flowcv.me/ikm</a></p>
-        <p>Developed For: Essential Generative AI Training</p>
-        <p>Conducted By: PAK ANGELS, iCodeGuru, ASPIRE PAKISTAN</p>
+        <p>Linkedin: https://www.linkedin.com/in/irfanullahkhanmarwat/</p>
+        
     </footer>
 """, unsafe_allow_html=True)

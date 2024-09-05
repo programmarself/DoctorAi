@@ -193,11 +193,23 @@ st.markdown("""
 # Sections
 st.markdown("<div id='home'></div>", unsafe_allow_html=True)
 st.header("Welcome to HealthCare Center")
-st.write("At Doctor AI, we leverage cutting-edge technology to deliver exceptional healthcare services tailored to your needs. Our team of experts is here to support your health journey.")
+st.write("At Doctor AI, we leverage state-of-the-art technology to revolutionize healthcare services, offering solutions that are specifically tailored to your unique needs. Our platform integrates cutting-edge AI tools with the expertise of seasoned medical professionals to deliver a comprehensive and personalized health experience.
+
+Our mission is to enhance the quality and accessibility of healthcare by providing intelligent, data-driven insights and solutions. Whether you're seeking general consultations, specialist care, or emergency services, our technology ensures that you receive accurate and timely support.
+
+Our team of healthcare experts is dedicated to guiding you through every step of your health journey. From virtual consultations to real-time health monitoring, we are here to ensure that you have access to the best possible care, no matter where you are.
+
+By combining innovative AI capabilities with compassionate medical guidance, Doctor AI is committed to making healthcare more efficient, accessible, and personalized. Trust us to be your partner in achieving better health and wellness.")
 
 st.markdown("<div id='about'></div>", unsafe_allow_html=True)
 st.header("About Us")
-st.write("Doctor AI is at the forefront of digital health, combining AI technology with experienced medical professionals to deliver quality care. Our mission is to make healthcare more accessible, personalized, and efficient for everyone.")
+st.write("Doctor AI stands at the cutting edge of digital health innovation, merging advanced artificial intelligence technology with the expertise of highly skilled medical professionals to offer unparalleled healthcare services. We are dedicated to transforming the healthcare experience by harnessing the power of AI to provide exceptional care that is both efficient and personalized.
+
+Our core mission is to revolutionize healthcare accessibility and quality by integrating sophisticated AI solutions with the compassionate touch of experienced clinicians. We believe that every individual deserves healthcare that is tailored to their unique needs and preferences. By leveraging AI, we aim to streamline processes, enhance diagnostic accuracy, and deliver insights that empower patients to make informed decisions about their health.
+
+Doctor AI is committed to breaking down barriers to healthcare, making it more accessible and effective for everyone. Our platform offers a seamless blend of technology and human touch, ensuring that every patient receives timely, relevant, and personalized care. Whether you're seeking routine check-ups, specialist consultations, or emergency services, our advanced AI tools and dedicated medical professionals work together to provide a holistic and efficient healthcare experience.
+
+At Doctor AI, we are passionate about using innovation to improve health outcomes and make quality care more attainable for all. Join us on our journey to redefine healthcare with the perfect balance of technology and human expertise.")
 
 st.markdown("<div id='services'></div>", unsafe_allow_html=True)
 st.header("Our Services")
@@ -236,7 +248,37 @@ st.write("**Address:** 123 Health St, Peshawar, Pakistan")
 
 st.markdown("<div id='blog'></div>", unsafe_allow_html=True)
 st.header("Health Blog")
-st.write("Stay updated with the latest health news, tips, and expert advice on our blog. We cover a range of topics to help you stay informed and healthy.")
+st.write("Welcome to the Doctor AI Health Blog, your go-to source for the latest updates, insights, and advice on maintaining a healthy lifestyle. Here, we cover a broad range of topics to help you stay informed and make better decisions about your health. Our blog features articles written by healthcare professionals, medical researchers, and wellness experts who are dedicated to providing accurate, evidence-based information.
+
+**1. Latest Health Trends and Innovations
+
+Stay updated with the most recent advancements in healthcare technology and wellness trends. From breakthroughs in medical research to the latest innovations in AI and digital health tools, we bring you comprehensive updates on how technology is transforming the landscape of healthcare. Learn about new treatments, cutting-edge devices, and how emerging technologies are enhancing patient care and improving health outcomes.
+
+**2. Healthy Living Tips
+
+Discover practical tips and strategies for leading a healthier lifestyle. Our articles cover a wide range of topics, including nutrition, exercise, mental health, and sleep hygiene. Find expert advice on creating balanced meal plans, incorporating physical activity into your daily routine, managing stress, and ensuring you get quality sleep. We also provide guidance on setting achievable health goals and maintaining motivation.
+
+**3. Disease Prevention and Management
+
+Learn how to prevent and manage common health conditions through lifestyle changes and medical interventions. Our blog features in-depth articles on topics such as heart disease, diabetes, hypertension, and respiratory conditions. Gain insights into the causes, symptoms, and risk factors associated with various diseases, and discover evidence-based strategies for prevention and management.
+
+**4. Patient Stories and Testimonials
+
+Read inspiring stories from individuals who have overcome health challenges and achieved positive outcomes with the help of Doctor AI. Our patient testimonials highlight personal journeys, experiences with our services, and the impact of our innovative AI solutions on their health. These stories offer valuable perspectives and motivation for others facing similar health issues.
+
+**5. Expert Interviews and Q&A
+
+Get direct answers to your health-related questions through our interviews with medical experts and specialists. We feature exclusive Q&A sessions where professionals share their insights on various health topics, answer common questions, and provide valuable advice. These interviews aim to bridge the gap between complex medical knowledge and everyday health concerns.
+
+**6. Wellness Resources and Guides
+
+Access a wealth of resources designed to support your well-being. Our blog includes downloadable guides, checklists, and educational materials on topics such as healthy eating, fitness routines, mental health strategies, and more. These resources are crafted to help you implement practical changes in your daily life and track your progress toward better health.
+
+**7. Healthcare Policy and Advocacy
+
+Stay informed about the latest developments in healthcare policy and advocacy. Our blog provides updates on health regulations, insurance changes, and initiatives aimed at improving healthcare systems. We discuss how these changes affect patients and healthcare providers and explore ways to advocate for better health policies and practices.
+
+Join the Doctor AI Health Blog community and stay engaged with content that matters to you. Whether you’re looking for tips to enhance your well-being, seeking information on managing a health condition, or simply interested in the latest health trends, our blog is here to provide you with the knowledge and resources you need to live a healthier, more informed life.")
 
 st.markdown("<div id='client'></div>", unsafe_allow_html=True)
 st.header("Client Interface")

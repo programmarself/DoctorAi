@@ -125,6 +125,19 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
+st.markdown("""
+    <style>
+    body {
+        background-image: url('assets/doctor ai.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
 # Placeholder for API keys and sensitive data
 api_key = st.secrets["api_key"]
 

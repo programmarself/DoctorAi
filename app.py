@@ -33,15 +33,17 @@ st.markdown("""
         background-color: #2980b9;
     }
     
-    .hero {
-        height: 680px;
-        background-image: url('assets/doctor ai.png');
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        border-radius: 15px;
-        margin-bottom: 30px;
-    }
+    /* Hero section styling */
+.hero {
+    position: relative;
+    height: 400px;
+    background-image: url('assets/doctor ai.png'); /* Updated to your image path */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
     .hero-overlay {
         position: absolute;

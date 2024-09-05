@@ -188,8 +188,6 @@ st.markdown("""
         </div>
     </section>
 """, unsafe_allow_html=True)
-st.image("doctor ai.png)
-
 # Sections
 st.markdown("<div id='home'></div>", unsafe_allow_html=True)
 st.header("Welcome to HealthCare Center")

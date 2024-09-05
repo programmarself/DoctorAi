@@ -25,13 +25,14 @@
 .hero {
     position: relative;
     height: 400px;
-    background-image: url('https://via.placeholder.com/1500x400');
+    background-image: url('assets/doctor ai.png'); /* Updated to your image path */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin-bottom: 20px;
     text-align: center;
 }
+
 
 .hero-overlay {
     position: absolute;

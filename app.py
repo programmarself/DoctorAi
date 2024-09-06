@@ -294,6 +294,8 @@ st.write("Address and resolve any disputes or issues that arise.")
 
 st.subheader("Ensure Compliance")
 st.write("Ensure all practices are in line with medical regulations and standards.")
+st.image("doctor ai.png")
+
 
 # Sidebar - Random Health Tip
 health_tips = [

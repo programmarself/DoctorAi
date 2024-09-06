@@ -1,3 +1,4 @@
 # Doctor_Ai
 
-![doctor ai](https://github.com/user-attachments/assets/b45264cf-51c6-426d-9e4c-e71b86a2f242)
+
+![doctor_ai](https://github.com/user-attachments/assets/ae18cf65-deaf-46ed-8ec8-1481ccfc57e4)

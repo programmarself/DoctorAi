@@ -3,7 +3,9 @@ from PIL import Image
 import random
 
 st.set_page_config(page_title="Doctor AI", layout="wide", initial_sidebar_state="collapsed")
-
+st.title("Welcome to HealthCare Center")
+st.image("doctor ai.png")
+st.write("Providing the best healthcare services for you and your family.")
 # Custom CSS for enhanced styling
 st.markdown("""
     <style>

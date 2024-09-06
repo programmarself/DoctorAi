@@ -279,7 +279,7 @@ st.button("Submit Profile")
 st.markdown("<div id='admin-management'></div>", unsafe_allow_html=True)
 st.header("Admin Management")
 st.write("Manage all doctors, appointments, and patient records from this section.")
-elif page == "Admin Management":
+if page == "Admin Management":
     st.title("Admin Management")
     st.write("Manage doctor profiles, monitor interactions, handle disputes, and ensure compliance.")
     st.write("This section is restricted to authorized admins.")

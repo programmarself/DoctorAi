@@ -184,11 +184,11 @@ st.markdown("""
             <h1>Doctor AI - Your Health, Our Priority</h1>
             <p>Providing top-notch healthcare services with AI-driven solutions.</p>
             <a class="cta-btn" href="#services">Explore Our Services</a>
-            st.image("doctor ai.png")
         </div>
     </section>
 """, unsafe_allow_html=True)
 # Sections
+st.image("doctor ai.png")
 st.markdown("<div id='home'></div>", unsafe_allow_html=True)
 st.header("Welcome to HealthCare Center")
 st.write("At Doctor AI, we leverage cutting-edge technology to deliver exceptional healthcare services tailored to your needs. Our team of experts is here to support your health journey.")

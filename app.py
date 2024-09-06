@@ -3,6 +3,7 @@ from PIL import Image
 import random
 
 st.set_page_config(page_title="Doctor AI", layout="wide", initial_sidebar_state="collapsed")
+st.image("doctor ai.png")
 # Custom CSS for enhanced styling
 st.markdown("""
     <style>

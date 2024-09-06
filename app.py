@@ -34,7 +34,7 @@ st.markdown("""
     
     .hero {
         height: 680px;
-        background-image: url('assets/doctor ai.png');
+        background-image: url('assets/doctor.png');
         background-size: cover;
         background-position: center;
         position: relative;

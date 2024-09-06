@@ -3,7 +3,6 @@ from PIL import Image
 import random
 
 st.set_page_config(page_title="Doctor AI", layout="wide", initial_sidebar_state="collapsed")
-st.image("doctor ai.png")
 # Custom CSS for enhanced styling
 st.markdown("""
     <style>
@@ -183,6 +182,7 @@ st.markdown("""
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Doctor AI - Your Health, Our Priority</h1>
+            st.image("doctor ai.png")
             <p>Providing top-notch healthcare services with AI-driven solutions.</p>
             <a class="cta-btn" href="#services">Explore Our Services</a>
         </div>

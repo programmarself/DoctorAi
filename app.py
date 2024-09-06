@@ -190,8 +190,9 @@ st.markdown("""
 # Sections
 st.markdown("<div id='home'></div>", unsafe_allow_html=True)
 st.header("Welcome to HealthCare Center")
-st.write("At Doctor AI, we leverage cutting-edge technology to deliver exceptional healthcare services tailored to your needs. Our team of experts is here to support your health journey.")
 st.image("welcome.jpg")
+st.write("At Doctor AI, we leverage cutting-edge technology to deliver exceptional healthcare services tailored to your needs. Our team of experts is here to support your health journey.")
+
 
 st.markdown("<div id='about'></div>", unsafe_allow_html=True)
 st.header("About Us")
@@ -228,6 +229,7 @@ st.markdown("""
 
 st.markdown("<div id='contact'></div>", unsafe_allow_html=True)
 st.header("Contact Us")
+st.image("Contact Us.jpg")
 st.write("We're here to help. Reach out to us via email, phone, or visit us at our clinic.")
 st.write("**Email:** contact@doctorai.com")
 st.write("**Phone:** +92 234 567 890")
@@ -235,26 +237,31 @@ st.write("**Address:** 123 Health St, Peshawar, Pakistan")
 
 st.markdown("<div id='blog'></div>", unsafe_allow_html=True)
 st.header("Health Blog")
+st.image("Health Blog.jpg")
 st.write("Stay updated with the latest health news, tips, and expert advice on our blog. We cover a range of topics to help you stay informed and healthy.")
 
 st.markdown("<div id='client'></div>", unsafe_allow_html=True)
 st.header("Client Interface")
+st.image("Client Interface.png")
 st.subheader("Search for Doctors")
 search_term = st.text_input("Search for doctors based on specialty, location, or availability")
 if search_term:
     st.write(f"Searching for doctors specializing in '{search_term}'...")
 
 st.subheader("Book an Appointment")
+st.image("Book an Appointment.png")
 selected_doctor = st.selectbox("Choose a doctor", ["Dr. Ali - Cardiologist", "Dr. Ahmed - Dermatologist", "Dr. Sara - Pediatrician"])
 appointment_date = st.date_input("Select Appointment Date")
 appointment_time = st.time_input("Select Appointment Time")
 st.button("Book Appointment")
 
 st.subheader("Access Medical History")
+st.image("Access Medical History.jpg")
 st.text_input("Enter your Patient ID to view your medical history")
 
 st.markdown("<div id='admin'></div>", unsafe_allow_html=True)
 st.header("Admin Panel")
+st.image("Admin Panel.jpg")
 st.write("This section is for administrators to manage doctors, appointments, and billing.")
 admin_action = st.selectbox("Admin Actions", ["Add New Doctor", "Monitor Appointments", "Manage Billing"])
 if admin_action == "Add New Doctor":
@@ -265,12 +272,14 @@ if admin_action == "Add New Doctor":
 
 st.markdown("<div id='chatbot'></div>", unsafe_allow_html=True)
 st.header("Chatbot")
+st.image("Chatbot.jpg")
 user_query = st.text_input("Ask the Doctor AI about your symptoms")
 if user_query:
     st.write(chatbot_response(user_query))
 
 st.markdown("<div id='new-doctors'></div>", unsafe_allow_html=True)
 st.header("New Doctor Profiles")
+st.image("New Doctor Profiles.jpg")
 st.write("Are you a new doctor? Submit your profile here.")
 st.text_input("Full Name")
 st.text_input("Specialty")
@@ -279,6 +288,7 @@ st.button("Submit Profile")
 
 st.markdown("<div id='admin-management'></div>", unsafe_allow_html=True)
 st.header("Admin Management")
+st.image("Admin Management.jpg")
 st.write("Manage all doctors, appointments, and patient records from this section.")
 
 st.title("Admin Management")

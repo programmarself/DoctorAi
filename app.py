@@ -3,7 +3,6 @@ from PIL import Image
 import random
 
 st.set_page_config(page_title="Doctor AI", layout="wide", initial_sidebar_state="collapsed")
-st.image("doctor ai.png")
 # Custom CSS for enhanced styling
 st.markdown("""
     <style>
@@ -142,6 +141,8 @@ st.markdown("""
 api_key = st.secrets["api_key"]
 
 # Function to simulate a chatbot response
+st.image("doctor ai.png")
+
 def chatbot_response(query):
     if 'fever' in query.lower():
         return "It seems you have a fever. It's recommended to stay hydrated, rest, and monitor your temperature. If it persists, consult a doctor."

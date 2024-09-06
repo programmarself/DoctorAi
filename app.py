@@ -127,7 +127,7 @@ st.markdown("""
 st.markdown("""
     <style>
     body {
-        background-image: url('assets/doctor ai.png');
+        background-image: url('assets/doctor.png');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;

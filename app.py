@@ -182,9 +182,9 @@ st.markdown("""
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Doctor AI - Your Health, Our Priority</h1>
-            st.image("doctor ai.png")
             <p>Providing top-notch healthcare services with AI-driven solutions.</p>
             <a class="cta-btn" href="#services">Explore Our Services</a>
+            st.image("doctor ai.png")
         </div>
     </section>
 """, unsafe_allow_html=True)

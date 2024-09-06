@@ -191,6 +191,7 @@ st.markdown("""
 st.markdown("<div id='home'></div>", unsafe_allow_html=True)
 st.header("Welcome to HealthCare Center")
 st.write("At Doctor AI, we leverage cutting-edge technology to deliver exceptional healthcare services tailored to your needs. Our team of experts is here to support your health journey.")
+st.image("welcome.jpg")
 
 st.markdown("<div id='about'></div>", unsafe_allow_html=True)
 st.header("About Us")

@@ -11,7 +11,7 @@ st.markdown("""
     body {
         font-family: 'Roboto', sans-serif;
         background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
-        background-image: url('assets/doctor ai.png'); /* Add your image URL here */
+        background-image: url('assets/doctor.png'); /* Add your image URL here */
         background-size: cover;
         background-position: center;
         background-attachment: fixed;

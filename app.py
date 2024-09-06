@@ -280,21 +280,21 @@ st.markdown("<div id='admin-management'></div>", unsafe_allow_html=True)
 st.header("Admin Management")
 st.write("Manage all doctors, appointments, and patient records from this section.")
 
-    st.title("Admin Management")
-    st.write("Manage doctor profiles, monitor interactions, handle disputes, and ensure compliance.")
-    st.write("This section is restricted to authorized admins.")
+st.title("Admin Management")
+st.write("Manage doctor profiles, monitor interactions, handle disputes, and ensure compliance.")
+st.write("This section is restricted to authorized admins.")
     
-    st.subheader("Approve New Doctor Profiles")
-    st.write("Review and approve or reject new doctor profiles submitted.")
+st.subheader("Approve New Doctor Profiles")
+st.write("Review and approve or reject new doctor profiles submitted.")
 
-    st.subheader("Monitor Doctor-Patient Interactions")
-    st.write("Oversee interactions between doctors and patients to ensure quality and compliance.")
+st.subheader("Monitor Doctor-Patient Interactions")
+st.write("Oversee interactions between doctors and patients to ensure quality and compliance.")
 
-    st.subheader("Handle Disputes or Issues")
-    st.write("Address and resolve any disputes or issues that arise.")
+st.subheader("Handle Disputes or Issues")
+st.write("Address and resolve any disputes or issues that arise.")
 
-    st.subheader("Ensure Compliance")
-    st.write("Ensure all practices are in line with medical regulations and standards.")
+st.subheader("Ensure Compliance")
+st.write("Ensure all practices are in line with medical regulations and standards.")
 
 # Sidebar - Random Health Tip
 health_tips = [

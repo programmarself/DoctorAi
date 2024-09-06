@@ -188,7 +188,6 @@ st.markdown("""
     </section>
 """, unsafe_allow_html=True)
 # Sections
-st.image("doctors.png")
 st.markdown("<div id='home'></div>", unsafe_allow_html=True)
 st.header("Welcome to HealthCare Center")
 st.write("At Doctor AI, we leverage cutting-edge technology to deliver exceptional healthcare services tailored to your needs. Our team of experts is here to support your health journey.")
@@ -196,6 +195,7 @@ st.write("At Doctor AI, we leverage cutting-edge technology to deliver exception
 st.markdown("<div id='about'></div>", unsafe_allow_html=True)
 st.header("About Us")
 st.write("Doctor AI is at the forefront of digital health, combining AI technology with experienced medical professionals to deliver quality care. Our mission is to make healthcare more accessible, personalized, and efficient for everyone.")
+st.image("doctors.png")
 
 st.markdown("<div id='services'></div>", unsafe_allow_html=True)
 st.header("Our Services")
